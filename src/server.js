@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
 app.get('/palindrome', (req, res) => {
   const inputString = req.query.input
   const result = isPalindrome(inputString)
-  res.send(result)
+  res.json({result: `${result}`})
   })
 
 app.get('/test', async (req, res) => {
