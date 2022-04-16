@@ -1,3 +1,4 @@
+import { alertSecurity } from "./alertSecurity"
 export function updateSalary(data, employeeName, wage){
     const employeeData = data.find(e => e.name === employeeName)
     if(wage <= 0) return
@@ -8,6 +9,3 @@ export function updateSalary(data, employeeName, wage){
     }
 }
 
-export function alertSecurity(){
-    console.log("Alerting Security")
-}
